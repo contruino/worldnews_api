@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup as bs
 import pandas as pd
 import xlsxwriter
 
-url = 'https://api.worldnewsapi.com/search-news?api-key=1f5553b6cf1c4e13a9a78fde8a2b3b0d&https://api.worldnewsapi.com/search-news?api-key=1f5553b6cf1c4e13a9a78fde8a2b3b0d&earliest-publish-date=01-01-2023'
+url = 'https://api.worldnewsapi.com/search-news?api-key=your_api_key&https://api.worldnewsapi.com/search-news?api-key=1f5553b6cf1c4e13a9a78fde8a2b3b0d&earliest-publish-date=01-01-2023'
 res = requests.get(url).json()
 
 for new in res['news']:
